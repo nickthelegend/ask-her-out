@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.6.4/lottie_svg.min.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Romantic Survey</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Style for the container of the Lottie animation */
+    .lottie-animation {
+      width: 300px; /* Change width as needed */
+      height: 300px; /* Change height as needed */
+      margin: 0 auto; /* Center the animation horizontally */
+    }
+    /* Style for the container of the Lottie animation */
+    .background-animation {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1; /* Ensure the animation is behind other content */
+    }
+
+    @media (max-width: 767px) {
+      .background-animation {
+        height: 100vh;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- <div id="lottie-container"></div> -->
+
+  <div class="background-animation"></div>
+
+  <div class="main-row">
+    <div class="lottie-animation"></div>
+    <div class="container">
+      <div id="progress-bar"></div>
+      <!-- Progress bar -->
+      <div id="question-container">
+        <h2 id="question">  Joshika , Do you believe in love at first sight?</h2>
+        <div class="options">
+          <div class="button-container">
+            <button onclick="nextQuestion('yes')">Yes</button>
+            <button id="no-btn" onmousemove="moveNoButton(event)" onclick="changeButtonText()">No</button>
+          </div>
+        </div>
+      </div>
+      <div style="display: none;" class="endnotes">And that's how a computer science student confesses to his crush.</div>
+      
+    </div>
+  </div>
+  
+
+  <script src="script.js"></script>
+  <script>
+ document.addEventListener('DOMContentLoaded', function() {
+      // Function to load Lottie animation based on device type
+      function loadAnimationBasedOnDevice() {
+        var backgroundContainer = document.querySelector('.background-animation');
+        var animationPath = '';
+
+        // Check if the device is mobile
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+          animationPath = 'assets/lottie/MobileAnimation.json'; // Path to mobile animation
+        } else {
+          animationPath = 'assets/lottie/WebAnimation.json'; // Path to web animation
+        }
+
+        // Initialize Lottie animation
+        var animation = bodymovin.loadAnimation({
+          container: backgroundContainer,
+          renderer: 'svg',
+          loop: true, // Loop the animation
+          autoplay: true,
+          path: animationPath // Path to the appropriate animation file
+        });
+      }
+
+      // Load animation based on device type
+      loadAnimationBasedOnDevice();
+    });
+  </script>
+
+  
+</body>
+</html>
