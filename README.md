@@ -10,4 +10,6 @@ Thats it contribute by raising a pull request new features may be appreciated
 
 ![](demo/demo.gif)
 
-<video src="https://github.com/nickthelegend/ask-her-out/raw/master/demo/2024-04-20%2018-58-10.mkv"></video>demo\2024-04-20 18-58-10.mkv
+<video src="demo/2024-04-20 18-58-10.mkv"></video>
+
+demo\2024-04-20 18-58-10.mkv
