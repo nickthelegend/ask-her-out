@@ -2,11 +2,11 @@ var noButton = document.getElementById('no-btn');
 var progressBar = document.getElementById('progress-bar');
 
 var questions = [
-  "Joshika , Do you believe in love at first sight?",
-  "Joshika , Have you ever felt a connection with someone at first sight?",
-  "Joshika , Are you good at cooking?",
-  "Joshika , Can we be friends at least?",
-  "Joshika , Do you believe that people can change?",
+  "Joshika, Do you believe in love at first sight?",
+  "Joshika, Have you ever felt a connection with someone at first sight?",
+  "Joshika, Are you good at cooking?",
+  "Joshika, Can we be friends at least?",
+  "Joshika, Do you believe that people can change?",
 
 ];
 
