@@ -12,4 +12,3 @@ Thats it contribute by raising a pull request new features may be appreciated
 
 <video src="demo/2024-04-20 18-58-10.mkv"></video>
 
-demo\2024-04-20 18-58-10.mkv
