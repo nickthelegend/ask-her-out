@@ -38,6 +38,8 @@ function nextQuestion(answer) {
     // Optionally, you can hide the options/buttons here
     // Hide the options/buttons container
     document.querySelector('.options').style.display = 'none';
+
+    document.querySelector('.endSpeech').textContent = "I really have a crush on you, but I'm not sure if you even know I exist. It's kind of nerve-wracking to confess like this, but it's a dare I couldn't resist. I hope you don't mind me being bold. I guess you might not even find out who I am. Try to find me! Oh, by the way, you might have to do some detective work to figure it out. 😉 If you do happen to find out, please don't be rude about it. Remember, it's all just for fun and a bit of harmless curiosity. Oh, and Also, I want you to know that I don't want any bad stuff to come out of this, just hoping for a good laugh and maybe some good conversation.";
     showEndNotes();
   }
 
