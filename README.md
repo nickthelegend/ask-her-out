@@ -6,4 +6,4 @@
 3. She cant click no button
 
 
-Thats it contribute by raising a pull request new features may be appriciated
+Thats it contribute by raising a pull request new features may be appreciated
