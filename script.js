@@ -6,7 +6,7 @@ var questions = [
   "Joshika, Have you ever felt a connection with someone at first sight?",
   "Joshika, Are you good at cooking?",
   "Joshika, Can we be friends at least?",
-  "Joshika, Do you believe that people can change?",
+  "Joshika, Do you know who i am?",
 
 ];
 
